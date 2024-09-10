@@ -3,6 +3,11 @@ spring:
     url: jdbc:postgresql://localhost:5432/employee
     username: user
     password: pass
+  springdoc:
+    api-docs:
+      path: /v3/api-docs
+    swagger-ui:
+      path: /swagger-ui.html
 
   jpa:
     properties:

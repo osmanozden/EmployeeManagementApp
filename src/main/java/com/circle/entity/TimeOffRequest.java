@@ -13,15 +13,16 @@ import java.time.LocalDate;
 @NoArgsConstructor
 public class TimeOffRequest extends BaseEntity {
 
-
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
+    @JoinColumn(name = "request_category_id", nullable = false)
     private RequestCategory requestCategory;
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @ManyToOne
+    @JoinColumn(name = "employee_id", nullable = false,referencedColumnName = "id")
     private Employee employee;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy/M/d")
-    @Column(name = "start_date")
+    @Column(name = "start_date" )
     private LocalDate startDate;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy/M/d")

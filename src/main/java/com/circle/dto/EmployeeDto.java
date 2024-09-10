@@ -14,7 +14,6 @@ public class EmployeeDto extends BaseDto {
     private UUID id;
     private String name;
     private String position;
-    @NotEmpty(message = "Email cannot be empty")
     private String email;
     private double salary;
 
@@ -22,7 +21,6 @@ public class EmployeeDto extends BaseDto {
         return id;
     }
 
-    @Override
     public void setId(UUID id) {
         this.id = id;
     }

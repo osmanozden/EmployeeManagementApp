@@ -1,42 +1,34 @@
 package com.circle.base.dto;
 
+import com.circle.base.data.entity.BaseEntity;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.Objects;
 import java.util.UUID;
 
 @NoArgsConstructor
 @AllArgsConstructor
 public class BaseDto implements Serializable {
-    public UUID getId() {
-        return id;
-    }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        BaseDto baseDto = (BaseDto) o;
-        return Objects.equals(id, baseDto.id);
-    }
+    private static final Logger LOGGER = LoggerFactory.getLogger(BaseEntity.class);
 
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(id);
-    }
+    @Id
+    @GeneratedValue
+    private UUID id;
 
-    @Override
-    public String toString() {
-        return "BaseDto{" +
-                "id=" + id +
-                '}';
-    }
 
-    public void setId(UUID id) {
-        this.id = id;
-    }
+    @CreatedDate
+    protected Date creationDate;
 
-    protected UUID id;
+    @LastModifiedDate
+    @Temporal(TemporalType.TIMESTAMP)
+    protected Date lastModifiedDate;
 }

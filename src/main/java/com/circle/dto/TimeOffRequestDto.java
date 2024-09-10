@@ -18,10 +18,10 @@ public class TimeOffRequestDto {
     @Id
     private UUID requestCategoryId;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy/M/d")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy/MM/dd")
     private LocalDate startDate;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy/M/d")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy/MM/dd")
     private LocalDate endDate;
 
     public UUID getId() {

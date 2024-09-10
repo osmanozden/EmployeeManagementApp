@@ -7,7 +7,6 @@ import org.springframework.scheduling.annotation.EnableAsync;
 import java.util.TimeZone;
 
 @SpringBootApplication
-@EnableAsync
 public class EmployeeManagementApplication {
 	static{
 		TimeZone.setDefault(TimeZone.getTimeZone("UTC"));

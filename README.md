@@ -1,4 +1,14 @@
+# Author Information
+
 This project created for Circle by Osman Özden.
+
+For Contact:
+- ozden.osman@hotmail.com
+- +90 536 620 17 46
+- [LinkedIn](https://www.linkedin.com/in/osmanozden/)
+- [Github](https://github.com/osmanozden)
+
+# Project Information
 
 ### Tech Stack
 
@@ -6,6 +16,7 @@ This project created for Circle by Osman Özden.
 - PostgresSQL Latest Version
 - Maven 3.8.1
 - Spring Boot 3.3.3
+- Hibernate
 
 
 ### Environment setup
@@ -21,6 +32,7 @@ Make sure following software is installed on your PC.
 docker-compose up
 ```
 
+
 ### Compile & Build
 Most examples are build by top-level maven project.
 ```
@@ -28,6 +40,7 @@ mvn clean
 
 mvn build
 ```
+
 ### Bootstrap Data
 When the project starts, it automatically creates 3 different Request Categories and 1 Employee in the database.
 You can review the relevant code for more detailed information! 
@@ -39,7 +52,10 @@ src/main/java/com/circle/util/StartupRunner.java
 http://localhost:8080/swagger-ui.html
 ```
 
-#Employee Module
+# Endpoints
+
+
+## Employee Module
 
 ### Create Employee
 ```
@@ -78,11 +94,16 @@ curl --location 'http://localhost:8080/employee/getAllEmployees
 ```
 curl -X DELETE 'http://localhost:8080/employee/getAllEmployee?id=55446f38-6e11-4e45-961e-5394945272f1'
 ```
+## Request Category Module
+
 ### Get All Request Category
 
 ```
 curl -X GET 'http://localhost:8080/requestCategory/getAllCategory'
 ```
+
+## TimeOff Module
+
 ###  Create TimeOff Request 
 
 ```

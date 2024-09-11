@@ -1,14 +1,8 @@
-# Author Information
+# Getting Started
+
+## Project Information
 
 This project created for Circle by Osman Özden.
-
-For Contact:
-- ozden.osman@hotmail.com
-- +90 536 620 17 46
-- [LinkedIn](https://www.linkedin.com/in/osmanozden/)
-- [Github](https://github.com/osmanozden)
-
-# Project Information
 
 ### Tech Stack
 
@@ -17,6 +11,26 @@ For Contact:
 - Maven 3.8.1
 - Spring Boot 3.3.3
 - Hibernate
+
+
+### Reference Documentation
+For further reference, please consider the following sections:
+
+* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
+* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/3.3.3/maven-plugin)
+* [Create an OCI image](https://docs.spring.io/spring-boot/3.3.3/maven-plugin/build-image.html)
+* [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/3.3.3/reference/htmlsingle/index.html#using.devtools)
+* [Spring Web](https://docs.spring.io/spring-boot/docs/3.3.3/reference/htmlsingle/index.html#web)
+* [Spring Data JPA](https://docs.spring.io/spring-boot/docs/3.3.3/reference/htmlsingle/index.html#data.sql.jpa-and-spring-data)
+
+### Guides
+The following guides illustrate how to use some features concretely:
+
+* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
+* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
+* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
+* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
+
 
 
 ### Environment setup
@@ -128,3 +142,14 @@ curl -X POST 'http://localhost:8080/timeoff/createTimeOffRequest' \
 curl -X GET "http://localhost:8080/getTimeOffRequest?id=your-uuid-here" \
 -H "Accept: application/json"
 ```
+
+
+# Author Information
+
+This project created for Circle by Osman Özden.
+
+For Contact:
+- ozden.osman@hotmail.com
+- +90 536 620 17 46
+- [LinkedIn](https://www.linkedin.com/in/osmanozden/)
+- [Github](https://github.com/osmanozden)

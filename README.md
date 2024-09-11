@@ -41,6 +41,11 @@ mvn clean
 mvn build
 ```
 
+### Entity Topology 
+
+<img src="src/main/resources/templates/entity_topology.png">
+
+
 ### Bootstrap Data
 When the project starts, it automatically creates 3 different Request Categories and 1 Employee in the database.
 You can review the relevant code for more detailed information! 

@@ -107,7 +107,7 @@ curl -X GET 'http://localhost:8080/employee/getAllEmployee?id=55446f38-6e11-4e45
 
 ### Get All Employees
 ```
-curl --location 'http://localhost:8080/employee/getAllEmployees
+curl -X GET 'http://localhost:8080/employee/getAllEmployees
 ```
 ### Delete Employee
 ```
